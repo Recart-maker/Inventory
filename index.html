@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Toma de Inventario Aliservice</h2>
+    <p>Fecha: <span id="fecha-actual"></span></p>
+    
+    <table id="inventario">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>UN</th>
+                <th>Cantidad Anterior</th>
+                <th>Cantidad Actual</th>
+                <th>Diferencias</th>
+                <th>Valor Unitario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán dinámicamente --> 
+        </tbody>
+    </table>
+
+    <button id="guardar">Guardar Inventario</button>
+    <button id="descargar">Descargar Listado en XLSX</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
